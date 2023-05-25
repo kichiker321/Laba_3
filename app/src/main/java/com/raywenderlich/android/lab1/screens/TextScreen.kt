@@ -7,8 +7,12 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.sp
 import com.raywenderlich.android.lab1.R
 import com.raywenderlich.android.lab1.router.BackButtonHandler
 import com.raywenderlich.android.lab1.router.FundamentalsRouter
@@ -33,7 +37,11 @@ fun TextScreen() {
 @Preview
 fun MyText() {
     Text(
-        text = stringResource(id = R.string.set_text)
+        text = stringResource(id = R.string.set_text),
+        fontStyle = FontStyle.Italic,
+        color = colorResource(id = R.color.white),
+        fontSize = 30.sp,
+        fontWeight = FontWeight.Bold
     )
     //TODO add your code here
 }
