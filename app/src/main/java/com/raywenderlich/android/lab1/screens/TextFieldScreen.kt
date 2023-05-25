@@ -35,6 +35,7 @@ fun MyTextField() {
 
     TextField(value = textValue.value,
         onValueChange = {textValue.value = it},
+        label = {}
     )
     //TODO add your code here
 }
